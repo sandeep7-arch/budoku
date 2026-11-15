@@ -6,14 +6,13 @@
 
 
 typedef struct sqaure {
-  int r , c //r*9+c
+  // int r , c //r*9+c
   int val;
-  char possibilites;
+  // char possibilites;
   bool clue = false;
 }sqaure;
 
 sqaure grid[81];
-
 static inline void print_grid() {
   printf("--- SUDOKU GRID ---");
   for(int r = 0 ; r < 9 ; r++) {
