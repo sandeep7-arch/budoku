@@ -4,7 +4,6 @@
 #include <stdio.h>
 
 
-
 typedef struct sqaure {
   // int r , c //r*9+c
   int val;
@@ -12,7 +11,8 @@ typedef struct sqaure {
   bool clue = false;
 }sqaure;
 
-sqaure grid[81];
+extern sqaure grid[81]; // global variable
+                        
 static inline void print_grid() {
   printf("--- SUDOKU GRID ---");
   for(int r = 0 ; r < 9 ; r++) {
